@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Info</h1>
+<div mat-dialog-content>
+  <ul>
+    <li>
+        <h3>Name: {{data.hero.name.first}}</h3>
+    </li>
+    <li>
+        <h3>Last name: {{data.hero.name.last}}</h3>
+    </li>
+    <li>
+        <h3>Date of Birth: {{data.hero.dob.date.split('T')[0]}}</h3>
+    </li>
+    <li>
+        <h3>City: {{data.hero.location.city}}</h3>
+    </li>
+    <li>
+        <h3>Index: {{data.hero.location.postcode}}</h3>
+    </li>
+  </ul>
+</div>
