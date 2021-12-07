@@ -1,0 +1,23 @@
+<hr>
+Email: <input type="text" [(ngModel)]="userData.email">
+<div *ngIf="!(emailErr==='')"  id="emailErr">{{emailErr}}</div>
+<hr>
+Пароль: <input type="password" [(ngModel)]="userData.password">
+<div *ngIf="!(passwordErr==='')"  id="passwordErr">{{passwordErr}}</div>
+<hr>
+Пароль(подтвердить): <input type="password" [(ngModel)]="userData.passwordcheck">
+<div *ngIf="!(passwordcheckErr==='')"  id="passwordcheckErr">{{passwordcheckErr}}</div>
+<hr>
+Имя:<input type="text" [(ngModel)]="userData.name">
+<div *ngIf="!(nameErr==='')"  id="nameErr">{{nameErr}}</div>
+<hr>
+Фамилия:<input type="text" [(ngModel)]="userData.lastname">
+<div *ngIf="!(lastnameErr==='')"  id="lastnameErr">{{lastnameErr}}</div>
+<hr>
+<input type="checkbox" [(ngModel)]="userData.check">Согласен c <a href="" (click)="open_conditions()">Условиями</a>
+<div *ngIf="!(checkErr==='')" id="checkErr">{{checkErr}}</div>
+<hr>
+Телефон:<input type="text" [(ngModel)]="userData.phone">
+<div *ngIf="!(phoneErr==='')"  id="phoneErr">{{phoneErr}}</div>
+<hr>
+<input type="button"  value="Отправить" (click)="checkData()">
