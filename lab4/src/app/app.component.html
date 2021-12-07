@@ -1,0 +1,6 @@
+
+<p>ПІБ робітника: </p>
+<input type="text" [(ngModel)]="name" /><br>
+<p>Зарплата робітника: </p>
+<input type="number" [(ngModel)]="salary" /><br><br>
+<child-comp [userName]="name" [userSalary]="salary"></child-comp>
